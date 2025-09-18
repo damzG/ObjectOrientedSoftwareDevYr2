@@ -27,7 +27,7 @@ public  class Rectangle{
         return width;
     }
 
-    public String toString(){
+    public String toString1(){
         return "Length " + length + " Breadth: " + width;
     }
 
