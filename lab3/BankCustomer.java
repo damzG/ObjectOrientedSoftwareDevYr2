@@ -1,3 +1,6 @@
+
+import java.util.Arrays;
+
 class BankCustomer{
     private String name;
     private String address;
@@ -61,5 +64,9 @@ class BankCustomer{
             }
         }
         return balance;
+    }
+
+    public String toString1(){
+        return "Name: " + name + "Address: " + address + "Accounts: " + Arrays.toString(accounts);        
     }
 }

@@ -11,6 +11,7 @@ public class lab3aq2 {
         double saver1Balance = saver1.getSavingsBalance();
         double saver2Balance = saver2.getSavingsBalance();
 
+        System.out.println("Savings Accounts");
         System.out.println("Your savings balance saver1 is " + saver1Balance);
         System.out.println("Your savings balance saver2 is " + saver2Balance);
 
@@ -23,5 +24,13 @@ public class lab3aq2 {
 
         System.out.println("After the new rate savings balance saver1 is " + saver1Balance);
         System.out.println("After the new rate savings balance saver 2 is " + saver2Balance);
+
+         BankCustomer b1 = new BankCustomer("Damola", "Carlow");
+        b1.addAccount(saver1);
+        b1.addAccount(saver2);
+
+        System.out.println("Bank Customer 1");
+         System.out.println(b1.toString1());
+        System.out.println("Corresponding balance for accounts: " + b1.balance(b1.getAccounts()));
     }
 }
