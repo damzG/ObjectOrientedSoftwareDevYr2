@@ -41,22 +41,22 @@ public  class Rectangle{
 
     public void printRectangle(){
         String w  = "";
-        for(int i = 1; i <= width; i++){
+        for(int i = 1; i <= width; i++){  //For the first line
             w += "*";
         }
         
         System.out.println(w);
 
         //Next Line
-        for(int j = 0; j < length-2; j++){
-                System.out.print("*");
+        for(int j = 0; j < length-2; j++){  
+                System.out.print("*"); //Print first char 
 
                 for(int x = 0; x < width-2; x++){
-                    System.out.print(" ");
+                    System.out.print(" "); //Print space char btw 
                 }
-                System.out.print("*");
-                System.out.println();
+                System.out.print("*"); //Print the last char
+                System.out.println(); //Go the next line
             }
-            System.out.println(w);
+            System.out.println(w); //For the last line
     }
 }
