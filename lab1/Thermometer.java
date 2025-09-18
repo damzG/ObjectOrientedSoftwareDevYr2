@@ -24,4 +24,8 @@ public class Thermometer
 	{
 		return celsius;
 	}
-} // end class Thermomete
+
+	public String toString1(){
+		return "Celsuis: " + this.celsius + "°C";
+	}
+} // end class Thermometer
