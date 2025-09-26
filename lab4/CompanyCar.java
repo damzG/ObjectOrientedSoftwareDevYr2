@@ -2,9 +2,9 @@
 
 public class CompanyCar {
     //Attributes
-    private String make;
-    private String model;
-    private String regNo;
+    final private String make;
+    final private String model;
+    final private String regNo;
 
     //Constructor
     public CompanyCar(String make, String model, String regNo) {

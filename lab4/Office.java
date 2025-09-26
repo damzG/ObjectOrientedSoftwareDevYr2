@@ -2,9 +2,9 @@ public class Office {
     
     // Offices have a room number and are filled with employees
     private static int latestNo = 100; //room number starting at 100 using static
-    private int currentNo;
+    final private int currentNo;
     private int noOfOffices;
-    private Employee[] occupants = new Employee[2]; // max two employees per office room
+    final private Employee[] occupants = new Employee[2]; // max two employees per office room
     private int count = 0;
     private static int assignedCount = 0;
 

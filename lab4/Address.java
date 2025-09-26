@@ -1,7 +1,7 @@
 public class Address{
-    private String city;
-    private String town;
-    private String county;
+    final private String city;
+    final private String town;
+    final private String county;
 
 
     public Address(String city, String town, String county){

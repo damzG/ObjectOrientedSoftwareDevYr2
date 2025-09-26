@@ -2,9 +2,9 @@ import java.util.Scanner;
 
 public class Employee {
     static int latestID = 1000; //starting assigned employee number
-    private int currentID; //automatically assigned employee number
+    final private int currentID; //automatically assigned employee number
     Address empAddress;  // has an address location (aggregation)
-    private String empPosition; //either staff or manager
+    final private String empPosition; //either staff or manager
     private CompanyCar car; //employee object who is a manager has a car
     private Office office; //employee is in an office
     private static int noOfEmp = 0; //total no of employees max is 5
@@ -20,14 +20,17 @@ public class Employee {
 
                 //Checking if job position is manager
                 if (job.equalsIgnoreCase("Manager")) {
-                Scanner input = new Scanner(System.in);
-                System.out.print("Enter car make: ");
-                String make = input.next();
-                System.out.print("Enter car model: ");
-                String model = input.next();
-                System.out.print("Enter reg number: ");
-                String reg = input.next();
-
+                    String make;
+                    String model;
+                    String reg;
+                    try (Scanner input = new Scanner(System.in)) {
+                        System.out.print("Enter car make: ");
+                        make = input.next();
+                        System.out.print("Enter car model: ");
+                        model = input.next();
+                        System.out.print("Enter reg number: ");
+                        reg = input.next();
+                    }
                 this.car = new CompanyCar(make, model, reg);
     }
         }
