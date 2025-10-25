@@ -4,7 +4,7 @@ public class lab4aq1 {
 
     public static void main(String[] args) {
         try ( // MyHr System
-                Scanner input = new Scanner(System.in)) {
+            Scanner input = new Scanner(System.in)) {
             Office[] rooms = new Office[3]; //three office records automatically
             for(int i = 0; i < 3; i++){
                 rooms[i] = new Office();
