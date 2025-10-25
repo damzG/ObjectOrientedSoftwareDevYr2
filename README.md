@@ -10,16 +10,28 @@ MyProject/
 ├─ lab1/
 ├─ lab2/
 ├─ lab3/
+├─ lab4/
+├─ lab5/
+├─ lab6/
+├─ lab7/
+├─ lab8/
+├─ lab9/
 ├─ README.md
 └─ (other files)
 
-- **lab1, lab2, lab3**: Contain exercises and assignments for each lab.  
+- **lab1, lab2, lab3,lab4,lab5,lab6,lab7,lab8,lab9: Contain exercises and assignments for each lab.  
 - **README.md**: This file, providing overview and instructions.
 
 - ### Lab Details
 - **lab1**: Introduction to classes and objects, constructors, and basic OOP principles.  
 - **lab2**: Inheritance, polymorphism, and method overriding examples.  
 - **lab3**: Advanced OOP exercises including interfaces and abstract classes.
+- **lab4**: Aggregation
+- **lab5**: Composition & Inheritance
+- **lab6**: Inheritance
+- **lab7**: Inheritance & Abstract Classes
+- **lab8**: Abstract Classes
+- **lab9**: Interfaces
 
 ## Getting Started
 1. Clone the repository:
