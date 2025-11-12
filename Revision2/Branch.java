@@ -16,6 +16,30 @@ public class Branch {
 
     //Getters and Setters
 
+    public void setBranchName(String name){
+        this.branchName = name;
+    }
+
+    public void setBranchId(){
+        this.branchId = uniqueId++;
+    }
+
+    public void setLoc(Location location){
+        this.loc = location;
+    }
+
+    public String getBranchName(){
+        return branchName;
+    }
+
+    public int  getBranchId(){
+        return branchId;
+    }
+
+    public Location getLoc(){
+        return loc;
+    }
+
     // Add books
     public boolean addBook(Book b){
         if(books.size() < 5){
