@@ -2,8 +2,8 @@ public class Dealership{
     static int uniqueId = 1000; //unique identifier
     private int currentNo;
     private String tradingName;
-    Address dealAddress;  //abstraction (composition tightly coupled)
-    Car[] carsDeal = new Car[3]; //abstraction
+    Address dealAddress;  //aggregation (composition tightly coupled)
+    Car[] carsDeal = new Car[3]; //aggregation
     private int carCount = 0; //number of cars assigned to it
 
     public Dealership(String tName, Address address){
